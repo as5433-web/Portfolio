@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Three of Andrew Soleiman's engineering projects: an analog guitar amplifier, an electronic calculator, and an Arduino rover.">
+  <title>Projects | Andrew Soleiman</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner wrap">
+      <a class="brand" href="index.html" aria-label="Andrew Soleiman home"><span class="brand-mark" aria-hidden="true">AS</span><span class="brand-name">Andrew Soleiman<small>Engineering technology</small></span></a>
+      <button class="menu-toggle" type="button" aria-controls="navigation" aria-expanded="false" hidden>Menu <span aria-hidden="true">&#9776;</span></button>
+      <nav id="navigation" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html" aria-current="page">Projects</a>
+        <a href="skills.html">Skills</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="theme-toggle" type="button" aria-pressed="false" hidden>Dark mode</button>
+    </div>
+  </header>
+  <main id="main" tabindex="-1">
+    <section class="hero page-hero" aria-labelledby="page-title">
+      <div class="wrap"><p class="eyebrow">Design, fabrication &amp; testing</p><h1 id="page-title">Engineering projects</h1><p class="page-intro">A closer look at the circuits, hardware, and troubleshooting behind three hands-on projects.</p></div>
+    </section>
+
+    <nav class="wrap project-index" aria-label="Projects on this page"><a class="button" href="#guitar-amplifier">Guitar amplifier <span aria-hidden="true">&darr;</span></a><a class="button" href="#electronic-calculator">Electronic calculator <span aria-hidden="true">&darr;</span></a><a class="button" href="#robotics-rover">Robotics rover <span aria-hidden="true">&darr;</span></a></nav>
+
+    <section class="project-case case-muted" aria-labelledby="guitar-amplifier">
+      <div class="wrap">
+        <div class="section-label"><p class="eyebrow">ELT-213 / Active Circuit Design / Team project</p></div>
+        <div class="case-study-grid">
+          <article class="case-study-copy">
+            <h2 id="guitar-amplifier">Self-playing guitar amplifier</h2>
+            <p class="case-lead">A guitar amplifier that mixes a live instrument with a tunable drone note, giving the player a sustained tone to play alongside.</p>
+            <h3>Design &amp; construction</h3>
+            <p>Our team combined an LM386 amplifier, an XR2206 function generator, and a passive summing circuit to create this project. The XR2206 IC replaced the originally planned ICL8038 IC after a shipping delay. The report documents a tunable drone note range of approximately 100 to 3,000 Hz.</p>
+            <p>Each module was built and tested separately before being integrated. The finished system was mounted on an open-faced 3D-printed plate, with routed wiring and accessible controls for volume, gain, mixing, and frequency.</p>
+            <h3>Troubleshooting &amp; refinement</h3>
+            <p>Unwanted distortion, unequal signal levels, and ground-looping hum required several revisions. The oscillator measured close to 8V peak-to-peak, so simply pairing it to the guitar signal did not produce a balanced mix. We removed the second amplifier stage, added a resistive summing network, and adjusted the controls to isolate and level-match the inputs.</p>
+            <p>The final build powered the LM386 from a 9V battery and the oscillator from a separate 12V supply. A foot pedal changed the tuning resistance to switch between two preset drone notes, and a toggle switch selected either speaker or headphone output.</p>
+            <h3>Final result</h3>
+            <p>Final testing recorded a clear adjustable drone note, clean guitar amplification, impressive distortion, and reliable floor pedal switching. The project brought together circuit design, soldering, oscilloscope measurements, mechanical layout, and iterative troubleshooting.</p>
+            <ul class="tags" aria-label="Amplifier project skills"><li>Analog audio</li><li>LM386 / XR2206</li><li>Signal mixing</li><li>Soldering &amp; testing</li></ul>
+            <p class="report-link"><a class="button" href="reports/guitar-amplifier-lab-report.pdf" target="_blank" rel="noopener" aria-label="View guitar amplifier lab report (PDF, opens in a new tab)">View lab report (PDF) <span aria-hidden="true">&#8599;</span></a></p>
+          </article>
+          <div class="project-photos">
+            <figure class="project-photo"><a href="images/projects/guitar-amplifier-finished.jpg" aria-label="View the completed guitar amplifier photo"><img src="images/projects/guitar-amplifier-finished.jpg" width="1200" height="900" alt="Completed guitar amplifier on a red mounting plate, with the speaker, amplifier board, oscillator, battery, and control knobs visible." decoding="async"></a><figcaption>Completed amplifier assembly, with the circuitry and controls mounted on the printed plate.</figcaption></figure>
+            <figure class="project-photo"><a href="images/projects/guitar-amplifier-schematic.jpg" aria-label="View the full-size guitar amplifier schematic"><img src="images/projects/guitar-amplifier-schematic.jpg" width="2048" height="1536" alt="Hand-drawn final amplifier schematic showing the LM386, oscillator, mixing controls, power connections, pedal, and audio outputs." loading="lazy" decoding="async"></a><figcaption>Final schematic of the LM386 amplifier project. Select the image for a larger view.</figcaption></figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap project-case" aria-labelledby="electronic-calculator">
+      <div class="section-label"><p class="eyebrow">ELT-210 / Electronic Fabrication / Team project</p></div>
+      <div class="case-study-grid">
+        <article class="case-study-copy">
+          <h2 id="electronic-calculator">Electronic calculator</h2>
+          <p class="case-lead">An Arduino-based calculator built as a complete physical device, integrating a keypad, LCD, circuit board, and 3D-printed enclosure.</p>
+          <h3>Hardware &amp; assembly</h3>
+          <p>I coordinated a four-person team through the fabrication project. The report documents an Arduino Uno SMD R3 as the controller, a matrix keypad for input, an LCD for output, a contrast-adjustment potentiometer, and a battery-powered supply with an on/off switch.</p>
+          <p>The work connected schematic and layout preparation with breadboard prototyping, component assembly, soldering, Arduino program setup, and enclosure integration. A 3D-printed PLA housing brought the controls and electronics together into a handheld unit.</p>
+          <h3>Challenges &amp; lessons</h3>
+          <p>The team had to correct schematic errors, adapt to delayed parts, and modify keypad and switch connections for assembly. We also corrected a program-upload issue and investigated the prototype's sensitivity to low battery voltage.</p>
+          <p>The report documents the assembled calculator and its internal wiring. The main lesson of this project was that a working design depends on coordinating the electrical connections, software setup, power source, and mechanical fit throughout the build.</p>
+          <ul class="tags" aria-label="Calculator project skills"><li>Arduino integration</li><li>Fabrication</li><li>Team coordination</li><li>3D-printed enclosure</li></ul>
+          <p class="report-link"><a class="button" href="reports/electronic-calculator-lab-report.pdf" target="_blank" rel="noopener" aria-label="View electronic calculator lab report (PDF, opens in a new tab)">View lab report (PDF) <span aria-hidden="true">&#8599;</span></a></p>
+        </article>
+        <div class="project-photos">
+          <figure class="project-photo"><a href="images/projects/calculator-finished.jpg" aria-label="View the assembled electronic calculator"><img src="images/projects/calculator-finished.jpg" width="760" height="930" alt="Assembled handheld calculator with an illuminated LCD and keypad fitted into a gray 3D-printed enclosure." loading="lazy" decoding="async"></a><figcaption>Assembled calculator with the display and keypad installed in its enclosure.</figcaption></figure>
+          <figure class="project-photo"><a href="images/projects/calculator-schematic.jpg" aria-label="View the full-size electronic calculator schematic"><img src="images/projects/calculator-schematic.jpg" width="2048" height="1536" alt="Calculator wiring schematic showing connections between the Arduino, LCD, matrix keypad, and display contrast potentiometer." loading="lazy" decoding="async"></a><figcaption>Wiring schematic of the Arduino based calculator project. Select the image for a larger view.</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-case case-muted" aria-labelledby="robotics-rover">
+      <div class="wrap">
+        <div class="section-label"><p class="eyebrow">Robotics / Team project</p></div>
+        <div class="case-study-grid">
+          <article class="case-study-copy">
+            <h2 id="robotics-rover">Arduino rover project</h2>
+            <p class="case-lead">A robotics team project combining mechanical assembly, Arduino hardware, and MATLAB programming.</p>
+            <h3>Assembly, programming &amp; testing</h3>
+            <p>As part of the team, I assembled, programmed, and tested an Arduino Rover Rev 2 kit using hand tools and MATLAB programming. The project connected physical hardware assembly with software-controlled operation and testing.</p>
+            <p>The supplied rendering shows the rover's wheeled frame and electronics layout. It provides a visual reference for the kit used in the project.</p>
+            <ul class="tags" aria-label="Rover project skills"><li>Mechanical assembly</li><li>Arduino</li><li>MATLAB</li><li>Robotics testing</li></ul>
+          </article>
+          <div class="project-photos">
+            <figure class="project-photo"><a href="images/projects/rover-assembled.jpg" aria-label="View the assembled rover photo"><img src="images/projects/rover-assembled.jpg" width="1000" height="1333" alt="Assembled rover on a lab bench, showing a large white-spoked wheel, black frame, exposed wiring, and an upper plate with red, green, and blue discs." loading="lazy" decoding="async"></a><figcaption>Assembled rover on the lab bench, with the wheel assembly, wiring, and upper plate visible.</figcaption></figure>
+            <figure class="project-photo rover-photo"><a href="images/projects/rover-rendering.png" aria-label="View the rover rendering"><img src="images/projects/rover-rendering.png" width="383" height="318" alt="Rendering of the rover kit, showing its two large wheels, black support frame, electronics, and front rails." loading="lazy" decoding="async"></a><figcaption>Provided rover kit rendering.</figcaption></figure>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="wrap site-footer"><p>&copy; 2026 Andrew Soleiman</p><p>Electronics. Engineering. Audio.</p><a href="#main">Back to top &uarr;</a></footer>
+</body>
+</html>

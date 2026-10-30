@@ -1,0 +1,51 @@
+/* A single pulse crosses in 1.6 seconds, repeating every 2 seconds. */
+.wave-bar, .speaker-cone {
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .wave-bar {
+    --wave-offset: 0s;
+    animation: wave-pulse 2s ease-in-out infinite both;
+    animation-delay: calc(var(--wave-offset) + var(--bar-delay));
+  }
+  /* Continue across the color boundary instead of starting another pulse. */
+  .waveform-right .wave-bar { --wave-offset: .72s; }
+  .wave-bar:nth-child(1) { --bar-delay: 0s; }
+  .wave-bar:nth-child(2) { --bar-delay: .048s; }
+  .wave-bar:nth-child(3) { --bar-delay: .096s; }
+  .wave-bar:nth-child(4) { --bar-delay: .144s; }
+  .wave-bar:nth-child(5) { --bar-delay: .192s; }
+  .wave-bar:nth-child(6) { --bar-delay: .240s; }
+  .wave-bar:nth-child(7) { --bar-delay: .288s; }
+  .wave-bar:nth-child(8) { --bar-delay: .336s; }
+  .wave-bar:nth-child(9) { --bar-delay: .384s; }
+  .wave-bar:nth-child(10) { --bar-delay: .432s; }
+  .wave-bar:nth-child(11) { --bar-delay: .480s; }
+  .wave-bar:nth-child(12) { --bar-delay: .528s; }
+  .wave-bar:nth-child(13) { --bar-delay: .576s; }
+  .wave-bar:nth-child(14) { --bar-delay: .624s; }
+  .wave-bar:nth-child(15) { --bar-delay: .672s; }
+  .speaker-cone { animation: speaker-rhythm 4s ease-in-out infinite; }
+}
+
+@keyframes wave-pulse {
+  /* Resting height is 50% taller than before (.35 × 1.5 = .525). */
+  /* The last bar settles at 1.392s + .208s = 1.6s. */
+  0%, 10.4%, 100% { transform: scaleY(.525); }
+  4.8% { transform: scaleY(1); }
+}
+@keyframes speaker-rhythm {
+  /* 240 BPM = .25s per symbol; 16 symbols = a four-second loop. */
+  /* | - - - | - - | - | - - | - - - */
+  /* Pulse onsets: 0s, 1s, 1.75s, 2.25s, 3s. Each settles in .20s. */
+  0%, 5%, 25%, 30%, 43.75%, 48.75%, 56.25%, 61.25%, 75%, 80%, 100% {
+    transform: scale(1);
+  }
+  1.5%, 26.5%, 45.25%, 57.75%, 76.5% { transform: scale(1.085); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .wave-bar, .speaker-cone { animation: none; transform: none; }
+}
