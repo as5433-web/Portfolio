@@ -1,0 +1,139 @@
+{
+  "recordedDate": "2026-11-05",
+  "source": "User-provided test results and screenshots; not agent-executed browser audits",
+  "version": "Not supplied",
+  "fullPerformanceDiagnostics": "Projects mobile JSON supplied: mobile_test_Projects; Lighthouse 13.5.0",
+  "records": [
+    {
+      "page": "index.html",
+      "url": "https://as5433-web.github.io/Portfolio/index.html",
+      "device": "Desktop",
+      "mode": "Navigation",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "bestPractices": 100,
+        "seo": 100
+      },
+      "evidence": "User report and initial screenshots (initial screenshots did not display URL)"
+    },
+    {
+      "page": "about.html",
+      "url": "https://as5433-web.github.io/Portfolio/about.html",
+      "device": "Desktop",
+      "mode": "Navigation",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "bestPractices": 100,
+        "seo": 100
+      },
+      "evidence": "User report"
+    },
+    {
+      "page": "projects.html",
+      "url": "https://as5433-web.github.io/Portfolio/projects.html",
+      "device": "Desktop",
+      "mode": "Navigation",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "bestPractices": 100,
+        "seo": 100
+      },
+      "evidence": "User report"
+    },
+    {
+      "page": "skills.html",
+      "url": "https://as5433-web.github.io/Portfolio/skills.html",
+      "device": "Desktop",
+      "mode": "Navigation",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "bestPractices": 100,
+        "seo": 100
+      },
+      "evidence": "User report"
+    },
+    {
+      "page": "contact.html",
+      "url": "https://as5433-web.github.io/Portfolio/contact.html",
+      "device": "Desktop",
+      "mode": "Navigation",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "bestPractices": 100,
+        "seo": 100
+      },
+      "evidence": "User report"
+    },
+    {
+      "page": "projects.html",
+      "url": "https://as5433-web.github.io/Portfolio/projects.html",
+      "device": "Mobile",
+      "mode": "Navigation",
+      "scores": {
+        "performance": 89,
+        "accessibility": 100,
+        "bestPractices": 100,
+        "seo": 100
+      },
+      "evidence": {
+        "settings": "Screenshot 2026-11-05 155913.png",
+        "results": "Screenshot 2026-11-05 155906.png"
+      },
+      "lighthouseVersion": "13.5.0",
+      "fetchTime": "2026-11-05T21:03:48.526Z",
+      "diagnostics": "projects-mobile-diagnostics-2026-11-05.json"
+    },
+    {
+      "page": "skills.html",
+      "url": "https://as5433-web.github.io/Portfolio/skills.html",
+      "device": "Mobile",
+      "mode": "Navigation",
+      "scores": {
+        "performance": 90,
+        "accessibility": 100,
+        "bestPractices": 100,
+        "seo": 100
+      },
+      "evidence": {
+        "settings": "Screenshot 2026-11-05 155944.png",
+        "results": "Screenshot 2026-11-05 155935.png"
+      }
+    },
+    {
+      "page": "skills.html",
+      "url": "https://as5433-web.github.io/Portfolio/skills.html",
+      "device": "Mobile",
+      "mode": "Navigation",
+      "run": "Retest",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "bestPractices": 100,
+        "seo": 100
+      },
+      "evidence": "User reported all categories 100 on November 5, 2026; exact run time and full report not supplied"
+    },
+    {
+      "page": "projects.html",
+      "url": "https://as5433-web.github.io/Portfolio/projects.html",
+      "device": "Mobile",
+      "mode": "Navigation",
+      "run": "Retest",
+      "fetchTime": "2026-11-05T21:13:56.176Z",
+      "lighthouseVersion": "13.5.0",
+      "scores": {
+        "performance": 99,
+        "accessibility": 100,
+        "bestPractices": 100,
+        "seo": 100
+      },
+      "evidence": "User-supplied mobile_test2_Projects JSON",
+      "diagnostics": "projects-mobile-retest-2026-11-05.json"
+    }
+  ]
+}

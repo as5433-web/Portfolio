@@ -1,0 +1,43 @@
+{
+  "source": "User-supplied mobile_test2_Projects; audit not executed by agent",
+  "url": "https://as5433-web.github.io/Portfolio/projects.html",
+  "fetchTime": "2026-11-05T21:13:56.176Z",
+  "lighthouseVersion": "13.5.0",
+  "device": "mobile",
+  "scores": {
+    "performance": 99,
+    "accessibility": 100,
+    "best-practices": 100,
+    "seo": 100
+  },
+  "metrics": {
+    "first-contentful-paint": {
+      "value": 826.717,
+      "unit": "millisecond",
+      "display": "0.8 s"
+    },
+    "largest-contentful-paint": {
+      "value": 2260.717,
+      "unit": "millisecond",
+      "display": "2.3 s"
+    },
+    "speed-index": {
+      "value": 826.717,
+      "unit": "millisecond",
+      "display": "0.8 s"
+    },
+    "total-blocking-time": {
+      "value": 0,
+      "unit": "millisecond",
+      "display": "0 ms"
+    },
+    "cumulative-layout-shift": {
+      "value": 0,
+      "unit": "unitless",
+      "display": "0"
+    }
+  },
+  "layoutShiftEntries": 0,
+  "imageDelivery": "Est savings of 681 KiB",
+  "interpretation": "No layout shift observed in this run. No intervening website code change by agent; intermittent initialization behavior has not been proven fixed."
+}

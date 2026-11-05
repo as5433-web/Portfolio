@@ -1,0 +1,53 @@
+{
+  "source": "User-supplied mobile_test_Projects JSON; audit not executed by agent",
+  "url": "https://as5433-web.github.io/Portfolio/projects.html",
+  "fetchTime": "2026-11-05T21:03:48.526Z",
+  "lighthouseVersion": "13.5.0",
+  "scores": {
+    "performance": 89,
+    "accessibility": 100,
+    "best-practices": 100,
+    "seo": 100
+  },
+  "metrics": {
+    "first-contentful-paint": {
+      "value": 822.5204,
+      "unit": "millisecond",
+      "display": "0.8 s"
+    },
+    "largest-contentful-paint": {
+      "value": 2260.5204,
+      "unit": "millisecond",
+      "display": "2.3 s"
+    },
+    "speed-index": {
+      "value": 822.5204,
+      "unit": "millisecond",
+      "display": "0.8 s"
+    },
+    "total-blocking-time": {
+      "value": 12,
+      "unit": "millisecond",
+      "display": "10 ms"
+    },
+    "cumulative-layout-shift": {
+      "value": 0.2031430326885718,
+      "unit": "unitless",
+      "display": "0.203"
+    }
+  },
+  "findings": {
+    "layoutShift": "main#main shifted; report associates amplifier finished photo with missing explicit size, although local HTML already includes width and height. Cause requires rendered investigation.",
+    "imageDelivery": "Est savings of 681 KiB"
+  },
+  "optimizationStatus": "Not changed; browser diagnosis and retest pending",
+  "investigation": {
+    "method": "Temporary local HTML probe in headless Microsoft Edge, requested window 412x823. Deferred application script deliberately loaded 500 ms after window load, after images loaded, to isolate header initialization. Production files unchanged.",
+    "mainTopBeforeScript": 326.171875,
+    "mainTopAfterScript": 126.9375,
+    "movementPixels": 199.234375,
+    "result": "Header initialization reproduced approximately 199 px of upward movement of main. Full mobile navigation is initially visible; script replaces it with Menu/theme controls and a collapsed navigation.",
+    "limitations": "Deliberate script delay isolates behavior but does not reproduce original network timing. Headless virtual-time PerformanceObserver returned no shift entries, so no new CLS score is claimed. Original report contains no raw trace and filmstrip starts at 375 ms after first paint at 112 ms.",
+    "recommendation": "Initialize responsive header before its first paint while preserving accessible controls and a no-JavaScript navigation fallback. Then rerun live mobile Lighthouse."
+  }
+}

@@ -1,0 +1,550 @@
+{
+    "clientDate":  "2026-11-05",
+    "completedUtc":  "2026-11-05T20:42:31.9118569Z",
+    "site":  "https://as5433-web.github.io/Portfolio/",
+    "commit":  "32529835128acc03c3ce6fd7da3e6980f7c4b52d",
+    "method":  "PowerShell Invoke-WebRequest GET/HEAD and live-source inspection",
+    "passed":  67,
+    "failed":  0,
+    "requests":  20,
+    "browser":  "Not run: no browser automation connection",
+    "lighthouse":  "Not run: PageSpeed Insights API returned HTTP 429",
+    "checks":  [
+                   {
+                       "id":  "H01",
+                       "testing":  "Site root",
+                       "url":  "https://as5433-web.github.io/Portfolio/",
+                       "expected":  "HTTP 200 and Home title",
+                       "result":  "Pass",
+                       "actual":  "HTTP 200"
+                   },
+                   {
+                       "id":  "H02",
+                       "testing":  "index.html availability",
+                       "url":  "https://as5433-web.github.io/Portfolio/index.html",
+                       "expected":  "HTTP 200 and HTML",
+                       "result":  "Pass",
+                       "actual":  "HTTP 200; text/html; charset=utf-8"
+                   },
+                   {
+                       "id":  "H03",
+                       "testing":  "index.html deployed version",
+                       "url":  "https://as5433-web.github.io/Portfolio/index.html",
+                       "expected":  "Live HTML matches local reviewed HTML after newline normalization",
+                       "result":  "Pass",
+                       "actual":  "Content matches=True"
+                   },
+                   {
+                       "id":  "H04",
+                       "testing":  "index.html semantic source",
+                       "url":  "https://as5433-web.github.io/Portfolio/index.html",
+                       "expected":  "One h1/main; unique IDs; English language; nonempty title",
+                       "result":  "Pass",
+                       "actual":  "h1=1; main=1; unique=True"
+                   },
+                   {
+                       "id":  "H05",
+                       "testing":  "index.html email privacy",
+                       "url":  "https://as5433-web.github.io/Portfolio/index.html",
+                       "expected":  "No email address or mailto link in live HTML",
+                       "result":  "Pass",
+                       "actual":  "Email pattern found=False"
+                   },
+                   {
+                       "id":  "H06",
+                       "testing":  "about.html availability",
+                       "url":  "https://as5433-web.github.io/Portfolio/about.html",
+                       "expected":  "HTTP 200 and HTML",
+                       "result":  "Pass",
+                       "actual":  "HTTP 200; text/html; charset=utf-8"
+                   },
+                   {
+                       "id":  "H07",
+                       "testing":  "about.html deployed version",
+                       "url":  "https://as5433-web.github.io/Portfolio/about.html",
+                       "expected":  "Live HTML matches local reviewed HTML after newline normalization",
+                       "result":  "Pass",
+                       "actual":  "Content matches=True"
+                   },
+                   {
+                       "id":  "H08",
+                       "testing":  "about.html semantic source",
+                       "url":  "https://as5433-web.github.io/Portfolio/about.html",
+                       "expected":  "One h1/main; unique IDs; English language; nonempty title",
+                       "result":  "Pass",
+                       "actual":  "h1=1; main=1; unique=True"
+                   },
+                   {
+                       "id":  "H09",
+                       "testing":  "about.html email privacy",
+                       "url":  "https://as5433-web.github.io/Portfolio/about.html",
+                       "expected":  "No email address or mailto link in live HTML",
+                       "result":  "Pass",
+                       "actual":  "Email pattern found=False"
+                   },
+                   {
+                       "id":  "H10",
+                       "testing":  "projects.html availability",
+                       "url":  "https://as5433-web.github.io/Portfolio/projects.html",
+                       "expected":  "HTTP 200 and HTML",
+                       "result":  "Pass",
+                       "actual":  "HTTP 200; text/html; charset=utf-8"
+                   },
+                   {
+                       "id":  "H11",
+                       "testing":  "projects.html deployed version",
+                       "url":  "https://as5433-web.github.io/Portfolio/projects.html",
+                       "expected":  "Live HTML matches local reviewed HTML after newline normalization",
+                       "result":  "Pass",
+                       "actual":  "Content matches=True"
+                   },
+                   {
+                       "id":  "H12",
+                       "testing":  "projects.html semantic source",
+                       "url":  "https://as5433-web.github.io/Portfolio/projects.html",
+                       "expected":  "One h1/main; unique IDs; English language; nonempty title",
+                       "result":  "Pass",
+                       "actual":  "h1=1; main=1; unique=True"
+                   },
+                   {
+                       "id":  "H13",
+                       "testing":  "projects.html email privacy",
+                       "url":  "https://as5433-web.github.io/Portfolio/projects.html",
+                       "expected":  "No email address or mailto link in live HTML",
+                       "result":  "Pass",
+                       "actual":  "Email pattern found=False"
+                   },
+                   {
+                       "id":  "H14",
+                       "testing":  "skills.html availability",
+                       "url":  "https://as5433-web.github.io/Portfolio/skills.html",
+                       "expected":  "HTTP 200 and HTML",
+                       "result":  "Pass",
+                       "actual":  "HTTP 200; text/html; charset=utf-8"
+                   },
+                   {
+                       "id":  "H15",
+                       "testing":  "skills.html deployed version",
+                       "url":  "https://as5433-web.github.io/Portfolio/skills.html",
+                       "expected":  "Live HTML matches local reviewed HTML after newline normalization",
+                       "result":  "Pass",
+                       "actual":  "Content matches=True"
+                   },
+                   {
+                       "id":  "H16",
+                       "testing":  "skills.html semantic source",
+                       "url":  "https://as5433-web.github.io/Portfolio/skills.html",
+                       "expected":  "One h1/main; unique IDs; English language; nonempty title",
+                       "result":  "Pass",
+                       "actual":  "h1=1; main=1; unique=True"
+                   },
+                   {
+                       "id":  "H17",
+                       "testing":  "skills.html email privacy",
+                       "url":  "https://as5433-web.github.io/Portfolio/skills.html",
+                       "expected":  "No email address or mailto link in live HTML",
+                       "result":  "Pass",
+                       "actual":  "Email pattern found=False"
+                   },
+                   {
+                       "id":  "H18",
+                       "testing":  "contact.html availability",
+                       "url":  "https://as5433-web.github.io/Portfolio/contact.html",
+                       "expected":  "HTTP 200 and HTML",
+                       "result":  "Pass",
+                       "actual":  "HTTP 200; text/html; charset=utf-8"
+                   },
+                   {
+                       "id":  "H19",
+                       "testing":  "contact.html deployed version",
+                       "url":  "https://as5433-web.github.io/Portfolio/contact.html",
+                       "expected":  "Live HTML matches local reviewed HTML after newline normalization",
+                       "result":  "Pass",
+                       "actual":  "Content matches=True"
+                   },
+                   {
+                       "id":  "H20",
+                       "testing":  "contact.html semantic source",
+                       "url":  "https://as5433-web.github.io/Portfolio/contact.html",
+                       "expected":  "One h1/main; unique IDs; English language; nonempty title",
+                       "result":  "Pass",
+                       "actual":  "h1=1; main=1; unique=True"
+                   },
+                   {
+                       "id":  "H21",
+                       "testing":  "contact.html email privacy",
+                       "url":  "https://as5433-web.github.io/Portfolio/contact.html",
+                       "expected":  "No email address or mailto link in live HTML",
+                       "result":  "Pass",
+                       "actual":  "Email pattern found=False"
+                   },
+                   {
+                       "id":  "H22",
+                       "testing":  "index.html active navigation source",
+                       "url":  "https://as5433-web.github.io/Portfolio/index.html",
+                       "expected":  "Five links; aria-current only on current page",
+                       "result":  "Pass",
+                       "actual":  "Links=5; active correct=True"
+                   },
+                   {
+                       "id":  "H23",
+                       "testing":  "index.html -\u003e index.html HTTP link",
+                       "url":  "https://as5433-web.github.io/Portfolio/index.html",
+                       "expected":  "Relative navigation href exists and destination returns 200",
+                       "result":  "Pass",
+                       "actual":  "href=True; HTTP 200"
+                   },
+                   {
+                       "id":  "H24",
+                       "testing":  "index.html -\u003e about.html HTTP link",
+                       "url":  "https://as5433-web.github.io/Portfolio/about.html",
+                       "expected":  "Relative navigation href exists and destination returns 200",
+                       "result":  "Pass",
+                       "actual":  "href=True; HTTP 200"
+                   },
+                   {
+                       "id":  "H25",
+                       "testing":  "index.html -\u003e projects.html HTTP link",
+                       "url":  "https://as5433-web.github.io/Portfolio/projects.html",
+                       "expected":  "Relative navigation href exists and destination returns 200",
+                       "result":  "Pass",
+                       "actual":  "href=True; HTTP 200"
+                   },
+                   {
+                       "id":  "H26",
+                       "testing":  "index.html -\u003e skills.html HTTP link",
+                       "url":  "https://as5433-web.github.io/Portfolio/skills.html",
+                       "expected":  "Relative navigation href exists and destination returns 200",
+                       "result":  "Pass",
+                       "actual":  "href=True; HTTP 200"
+                   },
+                   {
+                       "id":  "H27",
+                       "testing":  "index.html -\u003e contact.html HTTP link",
+                       "url":  "https://as5433-web.github.io/Portfolio/contact.html",
+                       "expected":  "Relative navigation href exists and destination returns 200",
+                       "result":  "Pass",
+                       "actual":  "href=True; HTTP 200"
+                   },
+                   {
+                       "id":  "H28",
+                       "testing":  "index.html internal references",
+                       "url":  "https://as5433-web.github.io/Portfolio/index.html",
+                       "expected":  "All relative files available and HTML fragments exist",
+                       "result":  "Pass",
+                       "actual":  "All resolved"
+                   },
+                   {
+                       "id":  "H29",
+                       "testing":  "about.html active navigation source",
+                       "url":  "https://as5433-web.github.io/Portfolio/about.html",
+                       "expected":  "Five links; aria-current only on current page",
+                       "result":  "Pass",
+                       "actual":  "Links=5; active correct=True"
+                   },
+                   {
+                       "id":  "H30",
+                       "testing":  "about.html -\u003e index.html HTTP link",
+                       "url":  "https://as5433-web.github.io/Portfolio/index.html",
+                       "expected":  "Relative navigation href exists and destination returns 200",
+                       "result":  "Pass",
+                       "actual":  "href=True; HTTP 200"
+                   },
+                   {
+                       "id":  "H31",
+                       "testing":  "about.html -\u003e about.html HTTP link",
+                       "url":  "https://as5433-web.github.io/Portfolio/about.html",
+                       "expected":  "Relative navigation href exists and destination returns 200",
+                       "result":  "Pass",
+                       "actual":  "href=True; HTTP 200"
+                   },
+                   {
+                       "id":  "H32",
+                       "testing":  "about.html -\u003e projects.html HTTP link",
+                       "url":  "https://as5433-web.github.io/Portfolio/projects.html",
+                       "expected":  "Relative navigation href exists and destination returns 200",
+                       "result":  "Pass",
+                       "actual":  "href=True; HTTP 200"
+                   },
+                   {
+                       "id":  "H33",
+                       "testing":  "about.html -\u003e skills.html HTTP link",
+                       "url":  "https://as5433-web.github.io/Portfolio/skills.html",
+                       "expected":  "Relative navigation href exists and destination returns 200",
+                       "result":  "Pass",
+                       "actual":  "href=True; HTTP 200"
+                   },
+                   {
+                       "id":  "H34",
+                       "testing":  "about.html -\u003e contact.html HTTP link",
+                       "url":  "https://as5433-web.github.io/Portfolio/contact.html",
+                       "expected":  "Relative navigation href exists and destination returns 200",
+                       "result":  "Pass",
+                       "actual":  "href=True; HTTP 200"
+                   },
+                   {
+                       "id":  "H35",
+                       "testing":  "about.html internal references",
+                       "url":  "https://as5433-web.github.io/Portfolio/about.html",
+                       "expected":  "All relative files available and HTML fragments exist",
+                       "result":  "Pass",
+                       "actual":  "All resolved"
+                   },
+                   {
+                       "id":  "H36",
+                       "testing":  "projects.html active navigation source",
+                       "url":  "https://as5433-web.github.io/Portfolio/projects.html",
+                       "expected":  "Five links; aria-current only on current page",
+                       "result":  "Pass",
+                       "actual":  "Links=5; active correct=True"
+                   },
+                   {
+                       "id":  "H37",
+                       "testing":  "projects.html -\u003e index.html HTTP link",
+                       "url":  "https://as5433-web.github.io/Portfolio/index.html",
+                       "expected":  "Relative navigation href exists and destination returns 200",
+                       "result":  "Pass",
+                       "actual":  "href=True; HTTP 200"
+                   },
+                   {
+                       "id":  "H38",
+                       "testing":  "projects.html -\u003e about.html HTTP link",
+                       "url":  "https://as5433-web.github.io/Portfolio/about.html",
+                       "expected":  "Relative navigation href exists and destination returns 200",
+                       "result":  "Pass",
+                       "actual":  "href=True; HTTP 200"
+                   },
+                   {
+                       "id":  "H39",
+                       "testing":  "projects.html -\u003e projects.html HTTP link",
+                       "url":  "https://as5433-web.github.io/Portfolio/projects.html",
+                       "expected":  "Relative navigation href exists and destination returns 200",
+                       "result":  "Pass",
+                       "actual":  "href=True; HTTP 200"
+                   },
+                   {
+                       "id":  "H40",
+                       "testing":  "projects.html -\u003e skills.html HTTP link",
+                       "url":  "https://as5433-web.github.io/Portfolio/skills.html",
+                       "expected":  "Relative navigation href exists and destination returns 200",
+                       "result":  "Pass",
+                       "actual":  "href=True; HTTP 200"
+                   },
+                   {
+                       "id":  "H41",
+                       "testing":  "projects.html -\u003e contact.html HTTP link",
+                       "url":  "https://as5433-web.github.io/Portfolio/contact.html",
+                       "expected":  "Relative navigation href exists and destination returns 200",
+                       "result":  "Pass",
+                       "actual":  "href=True; HTTP 200"
+                   },
+                   {
+                       "id":  "H42",
+                       "testing":  "projects.html internal references",
+                       "url":  "https://as5433-web.github.io/Portfolio/projects.html",
+                       "expected":  "All relative files available and HTML fragments exist",
+                       "result":  "Pass",
+                       "actual":  "All resolved"
+                   },
+                   {
+                       "id":  "H43",
+                       "testing":  "skills.html active navigation source",
+                       "url":  "https://as5433-web.github.io/Portfolio/skills.html",
+                       "expected":  "Five links; aria-current only on current page",
+                       "result":  "Pass",
+                       "actual":  "Links=5; active correct=True"
+                   },
+                   {
+                       "id":  "H44",
+                       "testing":  "skills.html -\u003e index.html HTTP link",
+                       "url":  "https://as5433-web.github.io/Portfolio/index.html",
+                       "expected":  "Relative navigation href exists and destination returns 200",
+                       "result":  "Pass",
+                       "actual":  "href=True; HTTP 200"
+                   },
+                   {
+                       "id":  "H45",
+                       "testing":  "skills.html -\u003e about.html HTTP link",
+                       "url":  "https://as5433-web.github.io/Portfolio/about.html",
+                       "expected":  "Relative navigation href exists and destination returns 200",
+                       "result":  "Pass",
+                       "actual":  "href=True; HTTP 200"
+                   },
+                   {
+                       "id":  "H46",
+                       "testing":  "skills.html -\u003e projects.html HTTP link",
+                       "url":  "https://as5433-web.github.io/Portfolio/projects.html",
+                       "expected":  "Relative navigation href exists and destination returns 200",
+                       "result":  "Pass",
+                       "actual":  "href=True; HTTP 200"
+                   },
+                   {
+                       "id":  "H47",
+                       "testing":  "skills.html -\u003e skills.html HTTP link",
+                       "url":  "https://as5433-web.github.io/Portfolio/skills.html",
+                       "expected":  "Relative navigation href exists and destination returns 200",
+                       "result":  "Pass",
+                       "actual":  "href=True; HTTP 200"
+                   },
+                   {
+                       "id":  "H48",
+                       "testing":  "skills.html -\u003e contact.html HTTP link",
+                       "url":  "https://as5433-web.github.io/Portfolio/contact.html",
+                       "expected":  "Relative navigation href exists and destination returns 200",
+                       "result":  "Pass",
+                       "actual":  "href=True; HTTP 200"
+                   },
+                   {
+                       "id":  "H49",
+                       "testing":  "skills.html internal references",
+                       "url":  "https://as5433-web.github.io/Portfolio/skills.html",
+                       "expected":  "All relative files available and HTML fragments exist",
+                       "result":  "Pass",
+                       "actual":  "All resolved"
+                   },
+                   {
+                       "id":  "H50",
+                       "testing":  "contact.html active navigation source",
+                       "url":  "https://as5433-web.github.io/Portfolio/contact.html",
+                       "expected":  "Five links; aria-current only on current page",
+                       "result":  "Pass",
+                       "actual":  "Links=5; active correct=True"
+                   },
+                   {
+                       "id":  "H51",
+                       "testing":  "contact.html -\u003e index.html HTTP link",
+                       "url":  "https://as5433-web.github.io/Portfolio/index.html",
+                       "expected":  "Relative navigation href exists and destination returns 200",
+                       "result":  "Pass",
+                       "actual":  "href=True; HTTP 200"
+                   },
+                   {
+                       "id":  "H52",
+                       "testing":  "contact.html -\u003e about.html HTTP link",
+                       "url":  "https://as5433-web.github.io/Portfolio/about.html",
+                       "expected":  "Relative navigation href exists and destination returns 200",
+                       "result":  "Pass",
+                       "actual":  "href=True; HTTP 200"
+                   },
+                   {
+                       "id":  "H53",
+                       "testing":  "contact.html -\u003e projects.html HTTP link",
+                       "url":  "https://as5433-web.github.io/Portfolio/projects.html",
+                       "expected":  "Relative navigation href exists and destination returns 200",
+                       "result":  "Pass",
+                       "actual":  "href=True; HTTP 200"
+                   },
+                   {
+                       "id":  "H54",
+                       "testing":  "contact.html -\u003e skills.html HTTP link",
+                       "url":  "https://as5433-web.github.io/Portfolio/skills.html",
+                       "expected":  "Relative navigation href exists and destination returns 200",
+                       "result":  "Pass",
+                       "actual":  "href=True; HTTP 200"
+                   },
+                   {
+                       "id":  "H55",
+                       "testing":  "contact.html -\u003e contact.html HTTP link",
+                       "url":  "https://as5433-web.github.io/Portfolio/contact.html",
+                       "expected":  "Relative navigation href exists and destination returns 200",
+                       "result":  "Pass",
+                       "actual":  "href=True; HTTP 200"
+                   },
+                   {
+                       "id":  "H56",
+                       "testing":  "contact.html internal references",
+                       "url":  "https://as5433-web.github.io/Portfolio/contact.html",
+                       "expected":  "All relative files available and HTML fragments exist",
+                       "result":  "Pass",
+                       "actual":  "All resolved"
+                   },
+                   {
+                       "id":  "H57",
+                       "testing":  "css/styles.css deployed version",
+                       "url":  "https://as5433-web.github.io/Portfolio/css/styles.css",
+                       "expected":  "HTTP 200 and matching reviewed content",
+                       "result":  "Pass",
+                       "actual":  "HTTP 200; content matches=True"
+                   },
+                   {
+                       "id":  "H58",
+                       "testing":  "css/animations.css deployed version",
+                       "url":  "https://as5433-web.github.io/Portfolio/css/animations.css",
+                       "expected":  "HTTP 200 and matching reviewed content",
+                       "result":  "Pass",
+                       "actual":  "HTTP 200; content matches=True"
+                   },
+                   {
+                       "id":  "H59",
+                       "testing":  "js/script.js deployed version",
+                       "url":  "https://as5433-web.github.io/Portfolio/js/script.js",
+                       "expected":  "HTTP 200 and matching reviewed content",
+                       "result":  "Pass",
+                       "actual":  "HTTP 200; content matches=True"
+                   },
+                   {
+                       "id":  "H60",
+                       "testing":  "Image images/projects/guitar-amplifier-finished.jpg",
+                       "url":  "https://as5433-web.github.io/Portfolio/images/projects/guitar-amplifier-finished.jpg",
+                       "expected":  "HTTP 200; image type; nonempty alt; size \u003e0 and \u003c500000 bytes",
+                       "result":  "Pass",
+                       "actual":  "HTTP 200; image/jpeg; bytes=200408; alt=True"
+                   },
+                   {
+                       "id":  "H61",
+                       "testing":  "Image images/projects/guitar-amplifier-schematic.jpg",
+                       "url":  "https://as5433-web.github.io/Portfolio/images/projects/guitar-amplifier-schematic.jpg",
+                       "expected":  "HTTP 200; image type; nonempty alt; size \u003e0 and \u003c500000 bytes",
+                       "result":  "Pass",
+                       "actual":  "HTTP 200; image/jpeg; bytes=488715; alt=True"
+                   },
+                   {
+                       "id":  "H62",
+                       "testing":  "Image images/projects/calculator-finished.jpg",
+                       "url":  "https://as5433-web.github.io/Portfolio/images/projects/calculator-finished.jpg",
+                       "expected":  "HTTP 200; image type; nonempty alt; size \u003e0 and \u003c500000 bytes",
+                       "result":  "Pass",
+                       "actual":  "HTTP 200; image/jpeg; bytes=92042; alt=True"
+                   },
+                   {
+                       "id":  "H63",
+                       "testing":  "Image images/projects/calculator-schematic.jpg",
+                       "url":  "https://as5433-web.github.io/Portfolio/images/projects/calculator-schematic.jpg",
+                       "expected":  "HTTP 200; image type; nonempty alt; size \u003e0 and \u003c500000 bytes",
+                       "result":  "Pass",
+                       "actual":  "HTTP 200; image/jpeg; bytes=367380; alt=True"
+                   },
+                   {
+                       "id":  "H64",
+                       "testing":  "Image images/projects/rover-assembled.jpg",
+                       "url":  "https://as5433-web.github.io/Portfolio/images/projects/rover-assembled.jpg",
+                       "expected":  "HTTP 200; image type; nonempty alt; size \u003e0 and \u003c500000 bytes",
+                       "result":  "Pass",
+                       "actual":  "HTTP 200; image/jpeg; bytes=163961; alt=True"
+                   },
+                   {
+                       "id":  "H65",
+                       "testing":  "Image images/projects/rover-rendering.png",
+                       "url":  "https://as5433-web.github.io/Portfolio/images/projects/rover-rendering.png",
+                       "expected":  "HTTP 200; image type; nonempty alt; size \u003e0 and \u003c500000 bytes",
+                       "result":  "Pass",
+                       "actual":  "HTTP 200; image/png; bytes=37123; alt=True"
+                   },
+                   {
+                       "id":  "H66",
+                       "testing":  "Report reports/guitar-amplifier-lab-report.pdf",
+                       "url":  "https://as5433-web.github.io/Portfolio/reports/guitar-amplifier-lab-report.pdf",
+                       "expected":  "HTTP 200; application/pdf; expected file length",
+                       "result":  "Pass",
+                       "actual":  "HTTP 200; application/pdf; bytes=16261974"
+                   },
+                   {
+                       "id":  "H67",
+                       "testing":  "Report reports/electronic-calculator-lab-report.pdf",
+                       "url":  "https://as5433-web.github.io/Portfolio/reports/electronic-calculator-lab-report.pdf",
+                       "expected":  "HTTP 200; application/pdf; expected file length",
+                       "result":  "Pass",
+                       "actual":  "HTTP 200; application/pdf; bytes=10495350"
+                   }
+               ]
+}
