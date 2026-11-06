@@ -7,7 +7,7 @@ Live site: [Andrew Soleiman Portfolio](https://as5433-web.github.io/Portfolio/)
 - Deployed version checked: `32529835128acc03c3ce6fd7da3e6980f7c4b52d`.
 - Live HTTP/source checks: **67 Pass, 0 Fail**, using 20 GET/HEAD requests.
 - Evidence: [live HTTP results](testing/live-http-2026-11-05.json), including URLs, expected results, actual results, method, and UTC completion time.
-- Browser/manual cases: **42 Pass, 0 Fail, 2 Not run or partially reported**. Results are user-reported live testing. Keyboard navigation, mobile-menu behavior, theme persistence, and reduced motion were subsequently confirmed. Exact device dimensions were not supplied.
+- Browser/manual cases: **44 Pass, 0 Fail, 0 Not run**. Results are user-reported live testing. Keyboard navigation, mobile-menu behavior, theme persistence, and reduced motion were subsequently confirmed. Exact device dimensions were not supplied.
 
 The HTTP checks confirm availability, correct navigation hrefs and destinations, active-page attributes, matching deployed HTML/CSS/JavaScript, valid internal fragments, nonempty image alt text, image sizes below 500,000 bytes, and PDF content types/file lengths. They do not execute browser interactions or verify rendered appearance. External LinkedIn/catalog destinations were not tested by clicking them.
 
@@ -164,8 +164,8 @@ Replace Not run with Pass or Fail only after executing the entire case. If a cas
 | T36 | Home waveform | Watch two cycles on Home. | One pulse crosses left to right in about 1.6 seconds, repeating every 2 seconds. | Pass — User reports live laptop/phone checks successful, November 5, 2026; exact viewport sizes and animation timings not independently measured. |
 | T37 | Home speaker rhythm | Watch the amplifier on Home through two four-second loops. | Cones follow &#124; - - - &#124; - - &#124; - &#124; - - &#124; - - - at 240 BPM; cabinet stays still. | Pass — User reports live laptop/phone checks successful, November 5, 2026; exact viewport sizes and animation timings not independently measured. |
 | T38 | Reduced motion | Enable device/browser reduced motion; open Home and Projects. | Both illustrations are static; no Pause animations button is displayed. | Pass — User confirms following keyboard, mobile-menu, theme-persistence, and reduced-motion checks on the live site; all behaved as expected, November 5, 2026. |
-| T39 | Contact and privacy | On Contact, activate LinkedIn; inspect all page content and source for private contact details or mailto links. | LinkedIn opens the specified profile; no email address, mailto link, phone number, or home address is included. | Not run (partial) — User reports all live links/pictures work on laptop and phone; keyboard-specific steps and any additional inspection in this case not separately confirmed. |
-| T40 | Direct local opening | Double-click index.html, visit all five pages, and use theme/menu controls; repeat with browser storage blocked. | Pages/assets work without a server; unavailable storage causes no broken controls. | Not run |
+| T39 | Contact and privacy | On Contact, activate LinkedIn; inspect all page content and source for private contact details or mailto links. | LinkedIn opens the specified profile; no email address, mailto link, phone number, or home address is included. | Pass — User reports full privacy inspection found no private information, November 6, 2026; LinkedIn operation previously confirmed. |
+| T40 | Direct local opening | Double-click index.html, visit all five pages, and use theme/menu controls; repeat with browser storage blocked. | Pages/assets work without a server; unavailable storage causes no broken controls. | Pass — User confirms the localStorage throwing override was applied before resuming and all five local pages and controls worked normally, November 6, 2026; Console screenshot supplied. |
 | T41 | Projects photo links | Open each of the six project images by mouse and by Tab/Enter. | A larger version of the correct image opens; focus remains visible before activation. | Pass — User confirms following keyboard, mobile-menu, theme-persistence, and reduced-motion checks on the live site; all behaved as expected, November 5, 2026. |
 | T42 | Projects photo layout | View Projects at phone and laptop sizes in both themes; scroll through all six images and captions. | Images retain their proportions, captions are readable, and there is no horizontal overflow. | Pass — User reports live laptop/phone checks successful, November 5, 2026; exact viewport sizes and animation timings not independently measured. |
 | T43 | PDF report links | Activate the amplifier and calculator report links with mouse and Tab/Enter on the live site. | The correct original PDF opens in a new tab; link names announce the PDF and new tab. | Pass — User confirms following keyboard, mobile-menu, theme-persistence, and reduced-motion checks on the live site; all behaved as expected, November 5, 2026. |
@@ -173,7 +173,7 @@ Replace Not run with Pass or Fail only after executing the entire case. If a cas
 
 ## Failure and retest log
 
-No website failures were found in the completed live HTTP checks. All five desktop Lighthouse Accessibility cases passed at 100/100 by user report. Projects and Skills mobile Accessibility also scored 100/100 in the supplied screenshots. The user has since confirmed live laptop/phone checks and the additional keyboard, menu, theme-persistence, and reduced-motion procedures. Current totals are 42 Pass and 2 unexecuted or partially reported cases.
+No website failures were found in the completed live HTTP checks. All five desktop Lighthouse Accessibility cases passed at 100/100 by user report. Projects and Skills mobile Accessibility also scored 100/100 in the supplied screenshots. The user has since confirmed live laptop/phone checks and the additional keyboard, menu, theme-persistence, and reduced-motion procedures. Current totals are 44 Pass, 0 Fail, and 0 Not run.
 
 Initial mobile Performance observations: Projects 89, Skills 90. Skills subsequently scored 100 in all categories by user report, without an intervening code change by the agent. Projects JSON (Lighthouse 13.5.0, 2026-11-05T21:03:48.526Z) confirms Performance 89 and all other categories 100; layout shift 0.203 and image-delivery savings of approximately 681 KiB are recorded above. Projects optimization and live retest remain pending. Initial scores are retained.
 
@@ -209,9 +209,20 @@ The user confirms completing all four supplied procedures successfully on the li
 
 Remaining cases: T39 still needs the full privacy inspection (LinkedIn/link operation already reported successful); T40 still needs direct local-file opening with browser storage blocked. Neither is inferred from the live-site checks. Report phone/laptop screenshots and the submission report remain separate deliverables.
 
-## Supplied screenshot evidence � November 5, 2026
+## Supplied screenshot evidence � November 5, 2026
 
 - `Screenshot 2026-11-05 163232.png`: live Home on a laptop browser, with DevTools Rendering set to `prefers-reduced-motion: reduce`. This supports the user's reduced-motion test report; a still image alone does not demonstrate the absence of motion over time.
 - `unnamed.png`: live Home displayed on a phone, showing the stacked introduction and academic profile.
 
 Original screenshots remain outside the public repository for use in the assignment report. The laptop capture includes unrelated browser bookmarks; use a cropped or redacted copy if publishing it. No screenshot pixels were modified or added to the repository in this commit.
+
+## Privacy and local-file testing update — November 6, 2026
+
+The user reports completing the full privacy inspection with no private information found. T39 is Pass based on that report and the previously confirmed LinkedIn link.
+
+The user reports all pages worked normally after setting the breakpoint on line 5 of script.js. Supplied screenshots `Screenshot 2026-11-06 021210.png` and `Screenshot 2026-11-06 021152.png` show local Home and Skills, respectively; Skills is shown at an emulated 400 × 704 viewport. The breakpoint is configured and execution has resumed. These support local-file operation but do not show the Console override that makes localStorage throw. Setting a breakpoint alone does not block storage. T40 remains partially reported until the override step is confirmed. Original screenshots remain outside the public repository. Earlier remaining-case notes describe the status before this update.
+## Final storage-blocking confirmation — November 6, 2026
+
+The user explicitly confirmed applying the Console override before resuming execution. `Screenshot 2026-11-06 021615.png` shows the local Home page paused in the debugger and the executed Object.defineProperty override whose localStorage getter throws a SecurityError. Together with the user's previously reported successful operation of all five local pages after resuming, this completes T40 as Pass. The screenshot documents setup; successful behavior after resuming is supported by the user's report. Original screenshot remains outside the public repository.
+
+All 44 planned browser/manual cases are now recorded as Pass based on the documented user reports and supplied evidence; 67 earlier live HTTP/source checks also passed. The initial Projects mobile Performance 89/layout-shift observation and later 99/zero-shift retest remain preserved, and no permanent loading-shift fix is claimed. These testing updates have not yet been committed or pushed.
